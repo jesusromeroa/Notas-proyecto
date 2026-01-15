@@ -4,9 +4,9 @@ import { NotesModule } from './notes/notes.module'; // <--- IMPORTANTE
 
 @Module({
   imports: [
-    // Conexión a Mongo. Si falla, prueba quitar '/ucab-tasks' y dejar solo 'mongodb://localhost:27017'
+    // Conexión a Mongo. 
     MongooseModule.forRoot('mongodb://localhost:27017/ucab-tasks'), 
-    NotesModule, // <--- Aquí conectamos tus notas al servidor
+    NotesModule, //Aquí conectamos tus notas al servidor
   ],
   controllers: [],
   providers: [],
